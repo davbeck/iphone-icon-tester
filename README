@@ -2,3 +2,10 @@ This simple tool lets you preview iPhone application and/or webclip icons native
 
 Author: Abraham Vegh (me@abrahamvegh.com)
 License: See LICENSE file
+Usage: You will need a web server with PHP to run the tool.
+
+I haven't tested it, but it should be possible to use the web server built into Mac OS X together with the iPhone Simulator.
+
+Once you've set it up, first access the tool using Safari and save the page to the home screen as a webclip.
+Then upload the image you want to test, and modify the settings in tester.php to indicate the correct relative filename (or absolute URL), and whether you want the iPhone OS to apply the "rendered" gloss to the icon.
+Finally, tap the webclip icon to load the tool like any other webclip, and the OS will reload the icon automatically so you can preview it.
