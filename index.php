@@ -2,11 +2,11 @@
 // Options
 $render = true;
 $icons = array('57' => 'Icon.png',//iPhone/iPod
-			   '114' => 'Icon@2x.png',//iPhone/iPod Retina
-			   '72' => 'Icon-72.png',//iPad
-			   '28' => 'Icon-Small.png',//search iPhone/iPod
-			   '56' => 'Icon-Small@2x.png',//search iPhone/iPod Retina
-			   '50' => 'Icon-Small-50.png');//search iPad
+               '114' => 'Icon@2x.png',//iPhone/iPod Retina
+               '72' => 'Icon-72.png',//iPad
+               '28' => 'Icon-Small.png',//search iPhone/iPod
+               '56' => 'Icon-Small@2x.png',//search iPhone/iPod Retina
+               '50' => 'Icon-Small-50.png');//search iPad
 
 // Convenience
 foreach ($icons as $size => $icon) {
@@ -23,7 +23,7 @@ foreach ($icons as $size => $icon) {
 		
 		<?php
 		foreach ($icons as $size => $icon) {
-			$size_string = "$sizex$size";
+			$size_string = $size.'x'.$size;
 			$rel = "apple-touch-icon" . (!$render ? '-precomposed' : '');
 			echo "<link rel=\"$rel\" href=\"$icon\" sizes=\"$size_string\"/>\n";
 		}
