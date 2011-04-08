@@ -23,7 +23,7 @@ foreach ($icons as $size => $icon) {
 		
 		<?php
 		foreach ($icons as $size => $icon) {
-			$size_string = "$sizex$size";
+			$size_string = $size.'x'.$size;
 			$rel = "apple-touch-icon" . (!$render ? '-precomposed' : '');
 			echo "<link rel=\"$rel\" href=\"$icon\" sizes=\"$size_string\"/>\n";
 		}
